@@ -19,6 +19,7 @@ export type OrderlyConfig = {
   tradingPage: {
     tradingViewConfig: TradingPageProps["tradingViewConfig"];
     sharePnLConfig: TradingPageProps["sharePnLConfig"];
+    
   };
 };
 
@@ -91,6 +92,14 @@ export const useOrderlyConfig = () => {
           scriptSRC: "/tradingview/charting_library/charting_library.js",
           library_path: "/tradingview/charting_library/",
           customCssUrl: "/tradingview/chart.css",
+          colorConfig: {
+            downColor: '#ffffff',
+            upColor: '#ffffff',
+            pnlDownColor: '#ffffff',
+            pnlUpColor: '#ffffff',
+            chartBG: '#ffffff',
+          },
+          
         },
         sharePnLConfig: {
           backgroundImages: [
